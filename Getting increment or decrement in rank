@@ -1,0 +1,24 @@
+students={}
+n=int(input("Enter the number of students: ")
+for i in range n:
+    name=input("Enter name of student: ")
+    marks=input("Enter marks of student: ")
+    students[name]=marks
+students=dict(sorted(students.items(), key1=lambda x:x[1],reverse=True))
+for i in students:
+    print(i,":",students[i])
+s=input("Do you want to change marks of student press(Y/N): ")
+if s="Y" or s="y":
+    a=input("Enter name of student whose marks you want to change: ")
+    newmark=int(input("Enter new marks of student: "))
+    b=list(students).index(a))+1
+    foe=r i in students:
+        if i==a:
+            students[i]=newmark
+    students=dict(sorted(students.items(), key=lambda x: x[1],reverse=True))
+    c=list(students).index(a))+1
+    for i in students:
+        print(i,":", students[i])
+    print("The previous rank was {} and the current rank is {}.format(b,c))
+else:
+    print("Ok have a nice day!")
